@@ -4,6 +4,9 @@ PortfolioX is a modern and responsive portfolio website template built using **N
 This project uses **demo content only** and is intended for public sharing, learning, and easy customization.
 
 ---
+<img width="1897" height="907" alt="image" src="https://github.com/user-attachments/assets/3d186869-2ff2-4813-a385-e51a5abe66c0" />
+
+
 
 ## 🚀 Features
 
