@@ -73,6 +73,10 @@ PortfolioX/
 - /contact → Contact page
 
 ---
+## 👤 Author
+
+**Anurag**  
+Engineering Student | Web Developer
 
 ## 📌 Note
 
