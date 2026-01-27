@@ -1,38 +1,24 @@
-<nav class="navbar">
-    <div class="container nav-container">
-        <div class="logo">
-            <a href="/">Anurag Singh</a>
-        </div>
-        <div class="nav-toggle" id="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="/" class="nav-link">Home</a></li>
-            <li><a href="/about" class="nav-link">About</a></li>
-            <li><a href="/projects" class="nav-link">Projects</a></li>
-            <li><a href="/skills" class="nav-link">Skills</a></li>
-            <li><a href="/contact" class="nav-link">Contact</a></li>
-        </ul>
+<nav class="floating-nav-container">
+    <div class="floating-nav">
+        <a href="/" class="nav-item <%= typeof path !== 'undefined' && path === '/' ? 'active' : '' %>" title="Home">
+            <i class="ph-bold ph-house-line"></i>
+            <span class="dot"></span>
+        </a>
+        <a href="/projects" class="nav-item <%= typeof path !== 'undefined' && path === '/projects' ? 'active' : '' %>" title="Projects">
+            <i class="ph-bold ph-browsers"></i>
+            <span class="dot"></span>
+        </a>
+        <a href="/certificates" class="nav-item <%= typeof path !== 'undefined' && path === '/certificates' ? 'active' : '' %>" title="Certificates">
+            <i class="ph-bold ph-certificate"></i>
+            <span class="dot"></span>
+        </a>
+        <a href="/skills" class="nav-item <%= typeof path !== 'undefined' && path === '/skills' ? 'active' : '' %>" title="Skills">
+            <i class="ph-bold ph-cpu"></i>
+            <span class="dot"></span>
+        </a>
+        <a href="/contact" class="nav-item <%= typeof path !== 'undefined' && path === '/contact' ? 'active' : '' %>" title="Contact">
+            <i class="ph-bold ph-envelope-simple"></i>
+            <span class="dot"></span>
+        </a>
     </div>
 </nav>
-
-<script>
-    // Mobile menu toggle
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        });
-    });
-</script>

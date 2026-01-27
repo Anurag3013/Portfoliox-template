@@ -14,23 +14,27 @@ const {v4: uuidv4} = require('uuid');
 
 // Routes
 app.get("/", (req, res) => {
-    res.render("home.ejs");
+    res.render("home.ejs", { path: "/" });
 });
 
 app.get("/about", (req, res) => {
-    res.render("about.ejs");
+    res.render("about.ejs", { path: "/about" });
 });
 
 app.get("/projects", (req, res) => {
-    res.render("projects.ejs");
+    res.render("projects.ejs", { path: "/projects" });
 });
 
 app.get("/skills", (req, res) => {
-    res.render("skills.ejs");
+    res.render("skills.ejs", { path: "/skills" });
 });
 
 app.get("/contact", (req, res) => {
-    res.render("contact.ejs");
+    res.render("contact.ejs", { path: "/contact" });
+});
+
+app.get("/certificates", (req, res) => {
+    res.render("certificates.ejs", { path: "/certificates" });
 });
 
 app.listen(port , ()=>{
