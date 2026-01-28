@@ -9,8 +9,6 @@ Link of the working website:https://portfoliox-template.onrender.com
 ---
 
 
-<img width="1897" height="907" alt="image" src="https://github.com/user-attachments/assets/3d186869-2ff2-4813-a385-e51a5abe66c0" />
-
 
 
 ## 🚀 Features
